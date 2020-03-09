@@ -1,0 +1,5 @@
+steps:
+  - id: "kaniko test"
+    name: "gcr.io/kaniko-project/executor:v0.16.0"
+    args:
+      - --destination=gcr.io/$PROJECT_ID/image-root:$SHORT_SHA
